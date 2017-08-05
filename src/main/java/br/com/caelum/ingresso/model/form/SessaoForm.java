@@ -54,8 +54,8 @@ public class SessaoForm {
 
 	public Sessao toSessao(SalaDao salaDao, FilmeDao filmeDao){
 
-	       Sala sala = SalaDao.findOne(SalaId); //assim o Spring deixa
-	       Filme filme = FilmeDao.findOne(FilmeId); //assim o Spring deixa
+	       Sala sala = salaDao.findOne(SalaId); //assim o Spring deixa
+	       Filme filme = filmeDao.findOne(FilmeId); //assim o Spring deixa
 
 	       Sessao sessao = new Sessao(this.horario, filme, sala);
 	       sessao.setId(id);

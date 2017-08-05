@@ -1,7 +1,8 @@
 package br.com.caelum.ingresso.dao;
 
-import br.com.caelum.ingresso.model.Sala;
 import org.springframework.stereotype.Repository;
+
+import br.com.caelum.ingresso.model.Sala;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -16,7 +17,7 @@ public class SalaDao {
     @PersistenceContext
     private EntityManager manager;
 
-    public static Sala findOne(Integer id) {
+    public Sala findOne(Integer id) {
 
         return manager.find(Sala.class, id);
     }
