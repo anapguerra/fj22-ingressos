@@ -17,7 +17,7 @@ public class FilmeDao {
     private EntityManager manager;
 
 
-    public Filme findOne(Integer id) {
+    public static Filme findOne(Integer id) {
         return manager.find(Filme.class, id);
     }
 
