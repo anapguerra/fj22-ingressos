@@ -38,8 +38,8 @@
             </div>
 		
 		
- 			<div class="form-group"> -->
- 				<label for="preco">Preço:</label> -->
+ 			<div class="form-group">
+ 				<label for="preco">Preço:</label>
  				<input id="preco" type="text" name="preco" class="form-control"
  				 						value="${filme.preco}"> 
  				<c:forEach items="${bindingResult.getFieldErrors('preco')}" 
