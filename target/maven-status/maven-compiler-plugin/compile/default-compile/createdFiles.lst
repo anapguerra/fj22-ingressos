@@ -6,10 +6,13 @@ br/com/caelum/ingresso/model/ImagemDaCapa.class
 br/com/caelum/ingresso/controller/FilmeController.class
 br/com/caelum/ingresso/model/Filme.class
 br/com/caelum/ingresso/rest/ImdbClient.class
+br/com/caelum/ingresso/controller/CompraController.class
 br/com/caelum/ingresso/model/Ingresso.class
 br/com/caelum/ingresso/model/SemDesconto.class
 br/com/caelum/ingresso/validacao/GerenciadorDeSessao.class
 br/com/caelum/ingresso/dao/FilmeDao.class
+br/com/caelum/ingresso/model/Carrinho.class
+br/com/caelum/ingresso/model/form/CarrinhoForm.class
 br/com/caelum/ingresso/dao/SessaoDao.class
 br/com/caelum/ingresso/dao/SalaDao.class
 br/com/caelum/ingresso/controller/LugarController.class

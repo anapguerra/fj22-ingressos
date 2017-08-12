@@ -6,6 +6,7 @@
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/model/DescontoEstudante.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/model/Sala.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/model/Lugar.java
+/home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/controller/CompraController.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/model/Sessao.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/model/DescontoDeTrintaPorCentoParaBancos.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/controller/SessaoController.java
@@ -13,9 +14,11 @@
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/model/DetalhesDoFilme.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/rest/ImdbClient.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/controller/HomeController.java
+/home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/model/form/CarrinhoForm.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/dao/SalaDao.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/model/TipoDeIngresso.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/dao/FilmeDao.java
+/home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/model/Carrinho.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/controller/LugarController.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/model/form/SessaoForm.java
 /home/lab6936/perfil/fj22-ingressos/src/main/java/br/com/caelum/ingresso/dao/SessaoDao.java
