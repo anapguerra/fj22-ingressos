@@ -24,7 +24,7 @@ public class CarrinhoForm {
 		
 	}
 	
-	public toIngressos(SessaoDao sessaoDao, LugarDao lugarDao){
+	public Set<Ingresso> toIngressos(SessaoDao sessaoDao, LugarDao lugarDao){
 		
 		return this.ingressos.stream().map
 				(ingresso -> {

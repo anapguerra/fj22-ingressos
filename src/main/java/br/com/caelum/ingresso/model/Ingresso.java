@@ -26,6 +26,16 @@ public class Ingresso {
 	private TipoDeIngresso tipoDeIngresso;
 	
 	
+	public TipoDeIngresso getTipoDeIngresso() {
+		return tipoDeIngresso;
+	}
+
+
+	public void setTipoDeIngresso(TipoDeIngresso tipoDeIngresso) {
+		this.tipoDeIngresso = tipoDeIngresso;
+	}
+
+
 	/*
 	 * deprecated hibernate only
 	 */
