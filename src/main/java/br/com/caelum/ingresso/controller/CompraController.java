@@ -26,5 +26,11 @@ public class CompraController {
 		carrinhoForm.toIngressos(sessaoDao, lugarDao).forEach(carrinho::add);
 		return modelAndView;
 	}
+	
+	@GetMapping("/compra")
+	public ModelAndView checkout(){
+		
+		
+	}
 
 }

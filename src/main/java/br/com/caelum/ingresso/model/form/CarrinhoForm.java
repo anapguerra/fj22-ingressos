@@ -14,9 +14,7 @@ import br.com.caelum.ingresso.model.TipoDeIngresso;
 public class CarrinhoForm {
 	private Set<Ingresso> ingressos = new HashSet<Ingresso>();
 	
-	public Set<Ingresso> getIngressos(){
-		return ingressos;
-	}
+	
 	
 	public void setIngressos(Set<Ingresso> ingressos){
 		
