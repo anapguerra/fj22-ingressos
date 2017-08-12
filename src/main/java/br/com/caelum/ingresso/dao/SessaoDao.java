@@ -15,6 +15,16 @@ public class SessaoDao {
 	
 	@PersistenceContext
 	private EntityManager manager;
+	
+	
+	
+	public Sessao findOne(Integer id){
+		
+		return manager.find(Sessao.class,id);
+		
+	}
+	
+	
 	public void save(Sessao sessao)
 	{
 
