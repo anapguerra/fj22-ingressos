@@ -2,10 +2,14 @@ package br.com.caelum.ingresso.model;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+@Entity
 public class Ingresso {
 	
 	
@@ -17,10 +21,16 @@ public class Ingresso {
 	private Sessao sessao;
 	private BigDecimal preco;
 	private Lugar lugar;
+	@Enumerated(EnumType.STRING)
+	private TipoDeIngresso tipoDeIngresso;
+	
 	
 	/*
 	 * deprecated hibernate only
 	 */
+	public Ingresso(){
+		
+	}
 
 	
 	public Ingresso (Sessao sessao, TipoDeIngresso tipoDeDesconto, Lugar lugar){
