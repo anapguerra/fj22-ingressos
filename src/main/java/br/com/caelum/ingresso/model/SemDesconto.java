@@ -8,4 +8,8 @@ public class SemDesconto implements Desconto{
 		return precoOriginal;
 	}
 
+	public String getDescricao()
+	{
+		return "Normal";
+	}
 }

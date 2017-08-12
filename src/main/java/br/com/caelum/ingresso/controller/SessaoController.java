@@ -33,6 +33,8 @@ public class SessaoController{
 	@Autowired //assim spring cria e já q ele cria então ele injeta o entity manager
 	private SessaoDao SessaoDao;
 	
+	
+	
 	@Autowired
     private ImdbClient client;
 	
@@ -48,6 +50,7 @@ public class SessaoController{
 		
 		modelAndView.addObject("imagemDaCapa", capa.orElse(new ImagemDaCapa()));
 		modelAndView.addObject("sessao", sessao);
+		modelAndView.addObject("tiposDeIngresso",TipoDeIngresso.values());
 		
 		return modelAndView;
 	}

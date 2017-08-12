@@ -7,9 +7,11 @@ import java.util.List;
 import java.util.Map;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 
 @Entity
@@ -27,6 +29,9 @@ public class Sessao {
 	private Sala sala;
 	
 	private BigDecimal preco;
+	
+	@OneToMany(fetch=FetchType.EAGER, mappedBy="Sessao")
+	private List<Ingresso> ingressos;
 	
 	/**
 	 * @deprecated hibernate only
@@ -104,6 +109,12 @@ public class Sessao {
 		
 		return sala.getMapaDeLugares();
 		
+		
+	}
+	
+	public boolean isDisponivel(Lugar lugar){
+		
+		return ingressos.stream().map(Ingresso::getLugar()).noneMatch(l->l:equals(lugar));
 		
 	}
 	

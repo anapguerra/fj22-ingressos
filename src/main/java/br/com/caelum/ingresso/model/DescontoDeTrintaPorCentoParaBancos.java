@@ -9,5 +9,10 @@ public class DescontoDeTrintaPorCentoParaBancos implements Desconto{
 	public BigDecimal aplicarDescontoSobre(BigDecimal precoOriginal) {
 		return precoOriginal.multiply(fator);
 	}
+	
+	public String getDescricao()
+	{
+		return "30% p/ bancos";
+	}
 
 }
