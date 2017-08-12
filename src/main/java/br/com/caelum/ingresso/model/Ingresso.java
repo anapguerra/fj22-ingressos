@@ -20,6 +20,7 @@ public class Ingresso {
 	@ManyToOne
 	private Sessao sessao;
 	private BigDecimal preco;
+	@ManyToOne
 	private Lugar lugar;
 	@Enumerated(EnumType.STRING)
 	private TipoDeIngresso tipoDeIngresso;

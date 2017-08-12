@@ -3,8 +3,11 @@ package br.com.caelum.ingresso.model;
 import java.math.BigDecimal;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -32,7 +35,7 @@ public class Sessao {
 	private BigDecimal preco;
 	
 	@OneToMany(fetch=FetchType.EAGER, mappedBy="sessao")
-	private List<Ingresso> ingressos;
+	private Set<Ingresso> ingressos = new HashSet<>();
 	
 	/**
 	 * @deprecated hibernate only
@@ -120,12 +123,15 @@ public class Sessao {
 	}
 
 
-	public List<Ingresso> getIngressos() {
+	
+
+
+	public Set<Ingresso> getIngressos() {
 		return ingressos;
 	}
 
 
-	public void setIngressos(List<Ingresso> ingressos) {
+	public void setIngressos(Set<Ingresso> ingressos) {
 		this.ingressos = ingressos;
 	}
 

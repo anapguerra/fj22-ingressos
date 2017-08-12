@@ -3,7 +3,7 @@ package br.com.caelum.ingresso;
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalTime;
-import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -50,7 +50,7 @@ public class SessaoTest {
 		
 		Ingresso ingresso = new Ingresso(sessao,TipoDeIngresso.INTEIRO,a1);
 		
-		List<Ingresso> ingressos = Stream.of(ingresso).collect(Collectors.toList());	
+		Set<Ingresso> ingressos = Stream.of(ingresso).collect(Collectors.toSet());	
 		
 		sessao.setIngressos(ingressos);
 		

@@ -18,4 +18,9 @@ public class LugarDao {
     public void save(Lugar lugar) {
         manager.persist(lugar);
     }
+    
+    public Lugar findOnde(Integer id)
+    {
+    	return manager.find(Lugar.class, id);
+    }
 }

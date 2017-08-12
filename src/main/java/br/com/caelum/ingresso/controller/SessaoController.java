@@ -39,6 +39,9 @@ public class SessaoController{
 	@Autowired
     private ImdbClient client;
 	
+	@Autowired
+	private Carrinho carrinho;
+	
 	
 	@GetMapping("/sessao/{id}/lugares")
 	public ModelAndView lugaresNaSessao(@PathVariable("id") Integer id){
@@ -51,7 +54,8 @@ public class SessaoController{
 		
 		modelAndView.addObject("imagemDaCapa", capa.orElse(new ImagemDaCapa()));
 		modelAndView.addObject("sessao", sessao);
-		modelAndView.addObject("tiposDeIngresso",TipoDeIngresso.values());
+		modelAndView.addObject("carrinho",carrinho);
+		modelAndView.addObject("tiposDeIngressos",TipoDeIngresso.values());
 		
 		return modelAndView;
 	}
